@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="stylos/form.css" rel = "stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id = "principal">
+      </table>
+        <form method = "post" action = "sucess.html">
+
+          <table>
+            <thead>
+              <tr>
+                <th>Conteúdo</th>
+                <th>Características</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td id = "td1">
+                  <div class = "quesiton">
+            
+                    <!--Corpo da questão-->
+                    <label for = "texto">Texto da questão:</label><br>
+                    <textarea name = "texto_question" id = "texto_question" placeholder="Digite o texto da questão aqui" rows="15" cols="40" required="required"></textarea><br><br>
+      
+                    <!--Anexo da questão 1 -->
+                    <label for = "imagem1">Anexo 1 da questão:</label><br>
+                    <input type = "file" name = "imagem1" id = "imagem1"><br><br>
+      
+                    <!--Anexo da questão 2 -->
+                    <label for = "imagem2">Anexo 2 da questão:</label><br>
+                    <input type = "file" name = "imagem2" id = "imagem2"><br><br>
+                    
+      
+                    <!-- Alternativas -->
+                    <label for = "alternativa_1">Texto da Alternativa 1:</label><br>
+                    <input type = "text" name = "alternativa1" id = "alternativa1" placeholder = "Digite o texto da alternativa" required = "required"><br><br>
+      
+                    <label for = "alternativa_2">Texto da Alternativa 2:</label><br>
+                    <input type = "text" name = "alternativa2" id = "alternativa2" placeholder = "Digite o texto da alternativa" required = "required"><br><br>
+                    
+                    <label for = "alternativa_3">Texto da Alternativa 3:</label><br>
+                    <input type = "text" name = "alternativa3" id = "alternativa3" placeholder = "Digite o texto da alternativa"><br><br>
+      
+                    <label for = "alternativa_4">Texto da Alternativa 4:</label><br>
+                    <input type = "text" name = "alternativa4" id = "alternativa4" placeholder = "Digite o texto da alternativa"><br><br>
+      
+                    <label for = "alternativa_5">Texto da Alternativa 5:</label><br>
+                    <input type = "text" name = "alternativa5" id = "texto_question" placeholder = "Digite o texto da alternativa"><br><br>
+      
+                    <!-- Alternativa correta -->
+                    <label for = "alternativa_correta">Alternativa Correta:</label><br>
+                    <input type = "text" name = "alternativa_correta" id = "alternativa_correta" placeholder = "Alternativa correta" required = "required"><br><br>
+      
+                  </div> 
+                </td>
+
+                <td id = "td2">
+                  <div class = "caracteristicas">
+                    <!--Disciplina-->
+                    <label for = "disciplina">Disciplina: </label><br>
+                    <input type = "text" name = "disciplina" id = "disciplina" required = "required"><br><br>
+                
+                    <!--Temas-->
+                    <label for = "tema1">Tema: </label><br>
+                    <input type = "text" name = "tema1" id = "tema1" required = "required"><br><br>
+      
+                    <label for = "tema2">Tema 2 : </label><br>
+                    <input type = "text" name = "tema2" id = "tema2"><br><br>
+                    
+                    <label for = "tema3">Tema 3: </label><br>
+                    <input type = "text" name = "tema3" id = "tema3"><br><br>
+      
+                    <!-- Banca -->
+                    <label for = "banca">Banca: </label><br>
+                    <input type = "text" name = "banca" id = "banca" required = "required"><br><br>
+      
+                    <!-- Ano da prova -->
+                    <label for = "ano">Banca: </label><br>
+                    <input type = "text" name = "ano" id = "ano" required = "required"><br><br>
+                    
+      
+                    <!-- Dificuldade -->
+                    <label class="statement" required = "required">Qual o nível de dificuldade da questão: </label>
+                    <ul class='likert'>
+                      <li>
+                        <input type="radio" name="likert" value="strong_agree">
+                        <label>Muito fácil</label>
+                      </li>
+                      <li>
+                        <input type="radio" name="likert" value="strong_agree">
+                        <label>Fácil</label>
+                      </li>
+                      <li>
+                        <input type="radio" name="likert" value="strong_agree">
+                        <label>Neutro</label>
+                      </li>
+                      <li>
+                        <input type="radio" name="likert" value="disagree">
+                        <label>Difícil</label>
+                      </li>
+                      <li>
+                        <input type="radio" name="likert" value="strong_agree">
+                        <label>Muito Difícil</label>
+                      </li>
+                    </ul>
+                  </div>
+                </td>
+              </tr>
+              
+              <tr>
+                <td colspan="2" align="center">
+                  <!-- Botão Enviar -->
+                  <label for = "enviar"></label><br><br>
+                  <input type="submit" name = "enviar" value = "Enviar"><br>
+                </td>
+
+              </tr>
+            </tbody>
+
+              
+            
+
+
+            
+        </form>
+    </div>
+    
+</body>
+</html>
